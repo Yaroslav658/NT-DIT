@@ -12,8 +12,5 @@ public class Game {
         Player player2 = new Player(scan.nextLine());
         Field a = new Field(player1, player2);
         a.gameOptions();
-        System.out.println();
-        System.out.println(player1.getInformation());
-        System.out.println(player2.getInformation());
     }
 }
