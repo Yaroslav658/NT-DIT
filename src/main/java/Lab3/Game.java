@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("int name of 1st player: ");
+        System.out.print("enter name of 1st player: ");
         Player player1 = new Player(scan.nextLine());
-        System.out.print("int name of 2nd player: ");
+        System.out.print("enter name of 2nd player: ");
         Player player2 = new Player(scan.nextLine());
         Field a = new Field(player1, player2);
         a.startGame();
