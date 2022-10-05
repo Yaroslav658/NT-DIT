@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -32,6 +33,7 @@ public class Lab2 {
             System.out.println();
 
         }
+
 //        for (int[] stringOfArray : myArray) {
 //            System.out.println(Arrays.toString(stringOfArray));
 //        }

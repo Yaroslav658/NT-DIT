@@ -3,12 +3,6 @@ package Lab3;
 import java.util.*;
 
 public class Field {
-    Field(Player player1, Player player2) {
-        this.player1 = player1;
-        this.player2 = player2;
-        createField();
-    }
-
     Player player1;
     Player player2;
 
@@ -17,6 +11,13 @@ public class Field {
 
     Map<Integer, Symbol> field = new HashMap<>();
 
+
+
+    Field(Player player1, Player player2) {
+        this.player1 = player1;
+        this.player2 = player2;
+        createField();
+    }
 
     void createField() {
         for (int i = 1; i < 10; i++) {
@@ -27,7 +28,8 @@ public class Field {
     void showField() {
         System.out.println("        |           |       " +
                 "                                |           |       ");
-        System.out.println("    " + field.get(1).symbol + "   |     " + field.get(2).symbol + "     |   " + field.get(3).symbol + "   " +
+        System.out.println("    " + field.get(1).symbol + "   |     "
+                + field.get(2).symbol + "     |   " + field.get(3).symbol + "   " +
                 "                            1   |     2     |   3   ");
         System.out.println("        |           |       " +
                 "                                |           |       ");
@@ -35,7 +37,8 @@ public class Field {
                 "                        ----------------------------");
         System.out.println("        |           |       " +
                 "                                |           |       ");
-        System.out.println("    " + field.get(4).symbol + "   |     " + field.get(5).symbol + "     |   " + field.get(6).symbol + "   " +
+        System.out.println("    " + field.get(4).symbol + "   |     "
+                + field.get(5).symbol + "     |   " + field.get(6).symbol + "   " +
                 "                            4   |     5     |   6   ");
         System.out.println("        |           |       " +
                 "                                |           |       ");
@@ -43,7 +46,8 @@ public class Field {
                 "                        ----------------------------");
         System.out.println("        |           |       " +
                 "                                |           |       ");
-        System.out.println("    " + field.get(7).symbol + "   |     " + field.get(8).symbol + "     |   " + field.get(9).symbol + "   " +
+        System.out.println("    " + field.get(7).symbol + "   |     "
+                + field.get(8).symbol + "     |   " + field.get(9).symbol + "   " +
                 "                            7   |     8     |   9   ");
         System.out.println("        |           |       " +
                 "                                |           |       ");
