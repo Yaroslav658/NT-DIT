@@ -88,7 +88,7 @@ public class Field {
             System.out.println("wrong position, "+player2.getName()+", please try again");
         }
     }
-    void change(int a) { // добавить игрока
+    void change(int a) {
         if (player1IsX) {
             field.put(a, Symbol.CROSS);
         } else {

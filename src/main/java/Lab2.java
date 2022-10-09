@@ -3,10 +3,7 @@ import java.util.Scanner;
 
 
 public class Lab2 {
-    public static void main(String[] args) {
-        System.out.print("int i = ");
-        Scanner scan = new Scanner(System.in);
-        int pyramidHeight = scan.nextInt();
+    public static void pyramid (int pyramidHeight){
         int pyramidCurrentLevel = pyramidHeight;
         while (pyramidCurrentLevel > 0) {
             String string = " ".repeat(pyramidCurrentLevel) +
@@ -15,13 +12,9 @@ public class Lab2 {
             System.out.println();
             pyramidCurrentLevel--;
         }
+    }
 
-
-
-        System.out.print("int array width: ");
-        int arrayWidth = scan.nextInt();
-        System.out.print("int array height: ");
-        int arrayHeight = scan.nextInt();
+    public static void myArray (int arrayWidth, int arrayHeight) {
         int x = 0;
         int[][] myArray = new int[arrayHeight][arrayWidth];
         for (int i = 0; i < arrayHeight; i++) {
@@ -31,13 +24,19 @@ public class Lab2 {
                 System.out.printf("%4d" + " ", myArray[i][j]);
             }
             System.out.println();
-
         }
+    }
+    public static void main(String[] args) {
+        System.out.print("int i = ");
+        Scanner scan = new Scanner(System.in);
+        int height = scan.nextInt();
+        pyramid(height);
 
-//        for (int[] stringOfArray : myArray) {
-//            System.out.println(Arrays.toString(stringOfArray));
-//        }
-
+        System.out.print("int array width: ");
+        int arrayWidth = scan.nextInt();
+        System.out.print("int array height: ");
+        int arrayHeight = scan.nextInt();
+        myArray(arrayWidth,arrayHeight);
 
         scan.close();
     }
